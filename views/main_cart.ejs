@@ -1,0 +1,108 @@
+<div class="container" style="text-align:center; width: 100%;">
+	<h1>MY CART</h1>
+	<div id="my" style="text-align:left;">
+		<!-- 장바구니 하나 넣을 때 마다 cart_frm 하나씩 생성 ... 이건 편한대로 바꿔도 돼용  -->
+		<div class="cart_frm">
+			<div class="um_cont">
+				<dl>
+					<dt class="orderseller">
+						<span class="ordseller"> <strong class="seller">고딤사</strong>
+						</span>
+					</dt>
+					<dd>
+						<ul class="cartlist">
+							<li>
+								<div>
+									<input type="checkbox" checked="checked" class="ckbox" />
+								</div>
+								<dl class="ordinfobox">
+									<dt>
+										<a href="#"> <!-- 추후에 클릭 시 상세 페이지로 넘어가도록 구현하면 좋을듯 -->
+											<div>
+												<img src="images/gallery-1-600x863.jpg" alt="" height="60"
+													alt="" width="60"> <span class="cntxt">
+													<strong class="name_seller">[고딤사]</strong> <strong
+													class="name_cloth">원피스 dcow61202w</strong>
+												</span>
+											</div>
+										</a>
+									</dt>
+
+									<dd class="ordinfocnt">
+										<div class="optbox">
+											<ul class="optlist">
+												<li style="display: block">색상: 네이비/ 사이즈: 55 / 1개</li>
+											</ul>
+										</div>
+										<dl class="moneycnt">
+											<dt>
+												수량 (<em class="hls _product_quantity">1</em>개)
+											</dt>
+											<dd>
+												<strong>29,000</strong>원
+											</dd>
+											<dt>할인</dt>
+											<dd>
+												<strong class="hls">4,000</strong>원
+											</dd>
+											<dt>배송비</dt>
+											<dd>무료</dd>
+											<dt class="buyttmn">주문금액</dt>
+											<dd class="buyttmn ">
+												<strong class="hls">25,000</strong>원
+											</dd>
+										</dl>
+										<ul class="button_set_justified cart_btn_set">
+											<li><a href="#"
+												class="button btn_emphasis _click(checkout.mobile.order.cart.orderOne(2017081588454154)) _stopDefault"><div>주문하기</div></a></li>
+										</ul>
+
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<dl class="buyorderinfo buypayinfo" style="text-align:left;">
+		<dd class="ordct ordgrn">
+			<ul class="brdmlist">
+				<li>
+					<strong>총 상품금액</strong><span><strong class="hls _totalOrderAmount">0</strong> 원</span>
+				</li>
+				<li>
+					<strong>배송비</strong><span><strong class="hls _totalDeliveryFeeAmount">(+) 0</strong> 원</span>
+				</li>
+				<li>
+					<strong>할인예상금액</strong><span><strong class="hls _totalDiscountAmount">(-) 0</strong> 원</span>
+				</li>
+			</ul>
+			<p class="brdmtotal">
+				<strong>결제금액 <span><em class="hls _subTotal">0</em> 원</span></strong>
+			</p>
+		</dd>
+	</dl>
+
+	<div class="pay_btn_set">
+		<ul class="button_set_justified_select">
+			<li>
+				<a href="#" class="button btn_primary size_lg _btn_order_all _click(checkout.mobile.order.cart.orderAll()) _stopDefault">
+				<div>
+					<span><em class="ico"></em>전체상품 주문</span>
+				</div></a>
+			</li>
+			<li>
+				<a href="#" class="button btn_emphasis size_lg _btn_order_partial _click(checkout.mobile.order.cart.orderChecked()) _stopDefault">
+				<div>선택 주문</div></a>
+			</li>
+			<li>
+				<a href="#" class="button btn_default size_lg _click(checkout.mobile.order.cart.removeCheckedProducts()) _stopDefault">
+				<div>
+					선택 삭제
+				</div></a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>

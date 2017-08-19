@@ -1,0 +1,209 @@
+#my {
+   width: 100%;
+   margin: auto;
+   text-align: center;
+}
+
+.list-group-item {
+   display: inline-grid;
+}
+
+.list-group-item:first-child {
+   width: 25%;
+}
+
+.list-group-item:last-child {
+   width: 60%;
+}
+
+.input-group {
+   margin-bottom: 10px;
+}
+
+.search-row {
+   width: 100%;
+}
+
+.input-group:child {
+   height: 100%;
+}
+
+.col-xs-8 {
+   width: 100%;
+   margin: auto;
+}
+
+.finder_col.finder_etc {
+    padding-bottom: 0;
+}
+
+.finder_col {
+    position: relative;
+    clear: both;
+    padding-left: 159px;
+    padding-bottom: 8px;
+    border-top: 1px solid #f4f4f6;
+}
+.finder_color {
+   overflow: hidden;
+   padding-right: 20px;
+   border-left: 1px solid #f4f4f6;
+   margin: 10px 0px;
+}
+.finder_color_list {
+    /* overflow: hidden;
+    position: relative;
+    width: 320px;
+    height: 32px; */
+    width: 100%;
+}
+ul, ol {
+    list-style: none;
+}
+.finder_color_list li:first-child {
+    margin-left: 0;
+}
+.finder_color_list li {
+    float: left;
+    position: relative;
+    width: 23px;
+    height: 23px;
+}
+
+.finder_color_list li.color_16 a {
+    background-position: 0 0;
+}
+.finder_color_list li a {
+    display: block;
+    overflow: hidden;
+    width: 23px;
+    height: 23px;
+    background: url(http://static.shopping.naver.net/pc2014/img/search/sp_search_v30.png) no-repeat;
+    line-height: 9999px;
+    vertical-align: top;
+}
+
+.finder_color_list li.color_16 a {
+   background-position: 0 0
+}
+.finder_color_list li.color_256 a {
+   background-position: -75px 0
+}
+
+.finder_color_list li.color_2048 a {
+   background-position: 0 -25px
+}
+
+.finder_color_list li.color_16384 a {
+   background-position: -75px -25px
+}
+
+.finder_color_list li.color_8 a {
+   background-position: -100px -25px
+}
+
+.finder_color_list li.color_4 a {
+   background-position: 0 -50px
+}
+
+.finder_color_list li.color_1 a {
+   background-position: -25px -50px
+}
+
+.finder_color_list li.color_512 a {
+   background-position: -50px -50px
+}
+
+.finder_color_list li.color_32 a {
+   background-position: -75px -50px
+}
+
+.finder_color_list li.color_131072 a {
+   background-position: -100px -50px
+}
+.finder_color_list li.color_32768 a {
+   background-position: -25px -75px
+}
+.finder_color_tit {
+   float: left;
+   /* width: 88px;
+   height: 41px; */
+   font-size: 12px;
+   font-weight: normal;
+   line-height: 25px;
+   color: #202022;
+   text-align: center;
+   margin: 0;
+   margin-right: 10px;
+}
+
+/* 
+
+.finder_color_list {
+   overflow: hidden;
+   position: relative;
+   width: 320px;
+   height: 32px
+}
+
+.finder_color_list li {
+   float: left;
+   position: relative;
+   width: 23px;
+   height: 23px;
+   margin: 9px 0 0 4px
+}
+
+.finder_color_list li:first-child {
+   margin-left: 0
+}
+
+.finder_color_list li a {
+   display: block;
+   overflow: hidden;
+   width: 23px;
+   height: 23px;
+   background:
+      url(http://static.shopping.naver.net/pc2014/img/search/sp_search_v30.png)
+      no-repeat;
+   line-height: 9999px;
+   vertical-align: top
+}
+ */
+/* .finder_color_list li.color_2 a {
+   background-position: -50px -75px
+}
+
+.finder_color_list li span {
+   display: none
+}
+
+.finder_color_list li.on span {
+   display: block;
+   overflow: hidden;
+   position: absolute;
+   top: 7px;
+   left: 5px;
+   width: 13px;
+   height: 10px;
+   background:
+      url(http://static.shopping.naver.net/pc2014/img/search/sp_search_v30.png)
+      no-repeat -130px -35px;
+   line-height: 9999px;
+   vertical-align: top;
+   cursor: pointer
+}
+
+.finder_color_list li.color_8.on span {
+   background-position: -150px -35px
+} */
+
+/* .finder_col.on .finder_color {
+   position: relative;
+   border-left: 0;
+   border-top: 1px solid #f4f4f6
+}
+
+.finder_col.on .finder_color_list {
+   width: 482px
+} */

@@ -1,0 +1,141 @@
+#my { margin: 10px; }
+.cart_frm {
+   border: solid 1px darkgray;
+   border-radius: 5px;
+}
+.um_cont {
+    margin-top: 6px;
+    border-radius: 3px;
+}
+.orderseller {
+    border-bottom: 1px solid #cecece;
+    padding: 0 10px;
+}
+.ordseller {
+    display: block;
+    overflow: hidden;
+    padding: 16px 0 15px;
+}
+.ordinfobox .cntxt {
+    display: block;
+    overflow: hidden;
+}
+.ckbox {
+    width: 20px;
+    height: 20px;
+}
+.ordinfobox .cntxt .name_cloth {
+    font-weight: normal;
+    font-size: 13px;
+    color: #95969e;
+}
+img { float: left; margin-right: 5px;}
+a { text-decoration: none; }
+.cntxt { padding-right: 25px; }
+.cntxt .name_seller {
+    color: #99989d;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 3px;
+    display: block;
+}
+.optlist{ padding: 5px 1px; }
+.cartlist { padding: 10px; }
+.optbox { background-color: lightgray; }
+.ordinfocnt { margin-top: 30px; }
+.optlist li {
+    font-size: 13px;
+    color: #95969e;
+}
+.moneycnt {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #565960;
+}
+.moneycnt dt { float: left; }
+.moneycnt dd { text-align: right; }
+.buyttmn { color: red; }
+
+.button_set_justified {
+    width: 100%;
+    text-align: -webkit-right;
+    padding: 0;
+}
+ul, ol {list-style: none;}
+.cart_btn_set li:nth-child(1) { width: 42%; }
+.button_set_justified li { display: table-cell; }
+.button_set_justified .button {
+    display: block;
+    padding: 4px 0;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 19px;
+    background-color: gray;
+    color: white;
+}
+.cart_btn_set {
+    margin-top: 10px;
+}
+a:HOVER {
+   text-decoration: none;
+}
+
+.pay_btn_set {
+    padding: 10px 5px;
+}
+.button_set_justified_select {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 1px;
+}
+.pay_btn_set li:nth-child(1) {
+    width: 50%;
+}
+.pay_btn_set li + li {
+    padding-left: 5px;
+}
+.buyorderinfo .ordgrn {
+    background: lightgray;
+}
+.buyorderinfo .ordgrn, .buyorderinfo .ordgry {
+    padding: 9px 10px 12px;
+    letter-spacing: 0;
+}
+.buypayinfo .brdmlist, .buyorderinfo .ordgrn .brdmlist {
+    padding: 1px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid darkgray;
+}
+.buypayinfo { margin-bottom: 2px; margin-top: 10px;}
+.buyorderinfo span { float: right; }
+.button.size_lg {
+    padding: 9px 0;
+    font-size: 15px;
+}
+.button.btn_primary {
+    border: 1px solid white;
+    background-color: gray;
+    color: white;
+}
+.button_set_justified_select li { display: table-cell; }
+.button_set_justified_select .button {
+   display: block;
+    padding: 5px 0;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 19px;
+    white-space: nowrap;
+}
+.button.btn_emphasis {
+    border: 1px solid #9ca2b0;
+    background-color: #a4abb9;
+    color: #fff;
+}
+.button.btn_default {
+    border: 1px solid #e2e6e9;
+    background-color: #fff;
+    color: #565960;
+}

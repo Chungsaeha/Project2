@@ -1,0 +1,101 @@
+<style>
+@media 
+	only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			position: absolute;
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		td:nth-of-type(1):before { content: "상품코드"; }
+		td:nth-of-type(2):before { content: "상품이미지"; }
+		td:nth-of-type(3):before { content: "상품명"; }
+		td:nth-of-type(4):before { content: "재고수정"; }
+		td:nth-of-type(5):before { content: "판매"; }
+		td:nth-of-type(6):before { content: "품절"; }
+	}
+
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+</style>
+<div class="container" style="text-align: center; width: 100%;">
+	<h2>Admin</h2>
+	<div id="page-wrap">
+		<table>
+			<thead>
+				<tr>
+					<th>상품코드</th>
+					<th>상품이미지</th>
+					<th>상품명</th>
+					<th>재고수정</th>
+					<th>품절</th>
+					<th>판매</th>
+				</tr>
+			</thead>
+			<tbody id="stock">	
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script>
+$(function(){
+	<% for(i=0; i<length; i++) { %>
+		<% var code = rows[i].item_code %>
+		$('#stock').append(
+		`
+			<tr>
+				<td><%=rows[i].item_code%></td>
+				<td><img src="/images/<%=rows[i].item_img%>" alt="" /></td>
+				<td><%=rows[i].item_name%></td>
+				<td><input type="number" min="0" value="<%=rows[i].item_num%>"></td>
+				<td><input id="<%=code%>_soldout" type="checkbox" value="<%=rows[i].item_code %>"/>
+				</td>
+				<td><input type="checkbox" value="sale"/></td>
+			</tr>		
+		`
+		);
+		$('#<%=code%>_soldout').bind("click",function(){
+			if($(this).is(':checked')){
+				console.log(<%=code%> + "code Sold OUT!!!");
+			}
+		})
+	<% } %>	
+})
+</script>

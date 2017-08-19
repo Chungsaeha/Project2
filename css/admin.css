@@ -1,0 +1,68 @@
+.btngroup {
+	margin-bottom: 10px;
+}
+
+.fileBtn {
+	width: 300px;
+	margin: auto;
+	padding-left: 50px;
+}
+
+.frmSelect {
+	width: 80%;
+	margin: 10px auto;
+	display: table;
+}
+
+.frmSelect label {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.frmSelect label, select {
+	display: table-cell;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 14px/1.4 Georgia, Serif;
+}
+
+
+p {
+	margin: 20px 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+tr:nth-of-type(odd) {
+	background: #f2f2f2;
+}
+
+th {
+	background: #ccc;
+	color: black;
+	font-weight: bold;
+}
+
+td, th {
+	padding: 6px;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+td img {
+	width: 50px;
+}
+td input {
+	width: 50px;
+}
+td:nth-child(5) { width: 100px; }
+td:nth-child(6) { width: 100px; }

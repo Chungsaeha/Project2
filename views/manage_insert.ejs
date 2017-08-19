@@ -1,0 +1,72 @@
+<div class="container" style="text-align:center; width:100%;">
+	<h2>Admin</h2>
+		<form action="/manage/insert" method="post"> 
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input name="goodsImage" type="file" class="form-control fileBtn">
+				</div>
+			</div>
+			<div class="form-group frmSelect">
+			  <label class="col-sm-2  for="sel1">상품타입</label>
+			  <div class="col-sm-10">
+			  	<select name="goodsTypes" class="form-control">
+			  		<option>타입선택</option>
+			  		<option value="early">Early</option>
+			    	<option value="pant">Pant</option>
+			    	<option value="shirt">Shirt</option>
+			    	<option value="tshirt">TeeShirt</option>
+			    	<option value="outer">Outer</option>
+			  	</select>
+			  </div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">상품코드</label>
+				<div class="col-sm-10">
+					<input name="goodsCode" type="number" class="form-control" min="0">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">상품명</label>
+				<div class="col-sm-10">
+					<input name="goodsName" type="text" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">상품설명</label>
+				<div class="col-sm-10">
+					<input name="goodsComment" type="text" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">상품가격</label>
+				<div class="col-sm-10">
+					<input name="goodsPrice" type="number" class="form-control" min="0">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">입고수량</label>
+				<div class="col-sm-10">
+					<input name="goodsNum" type="number" class="form-control" min="0">
+				</div>
+			</div>
+			<div class="form-group frmSelect">
+			  <label for="sel1">색상</label>
+			  <select name="goodsColor" class="form-control">
+			  	<option>색상선택</option>
+			  	<option value="빨강색">빨강색</option>
+			    <option value="노랑색">노랑색</option>
+			    <option value="초록색">초록색</option>
+			    <option value="네이비">네이비</option>
+			    <option value="흰색">흰색</option>			  
+			    <option value="회색">회색</option>
+			    <option value="검정색">검정색</option>
+			    <option value="카키색">카키색</option>
+			    <option value="보라색">보라색</option>
+			    <option value="분홍색">분홍색</option>
+			  </select>
+			</div>
+		<div class="btngroup">
+			<button type="submit" class="btn btn-default btn-lg">등록하기</button>
+		</div>
+	</form>
+</div>

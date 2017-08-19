@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="_nK">
+<link rel="icon" href="/images/logo.png">
+<title>SHOPPING STAR</title>
+<!-- START: styles -->
+<link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Tangerine:400,700">
+<link rel="stylesheet"
+	href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="/bower_components/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/bower_components/slick.js/slick/slick.css">
+<link rel="stylesheet"
+	href="/bower_components/slick.js/slick/slick-theme.css">
+<link rel="stylesheet"
+	href="/bower_components/photoswipe/dist/photoswipe.css">
+<link rel="stylesheet"
+	href="/bower_components/photoswipe/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="/bower_components/wow/css/libs/animate.css">
+<link rel="stylesheet"
+	href="/bower_components/fullpage.js/dist/jquery.fullpage.min.css">
+<link rel="stylesheet" href="/css/inlove.min.css">
+<link rel="stylesheet" href="/css/my.css">
+<link rel="stylesheet" href="/css/order.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+.container {
+   font-family: 'hanna';
+   font-size : 20px;
+}
+.shopicon {
+	width: 100%;
+}
+
+.navigator_menu {
+	text-align: right;
+	background-color: black;
+}
+
+.navigator_row {
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+</style>
+<!-- END: styles -->
+<!--[if lt IE 9]>
+<script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->   
+</head>
+<body>	
+	<!-- START: Navbar -->
+	<nav class="navbar inlove-navbar navbar-fixed-top inlove-navbar-fixed">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="container">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/main"><img
+						src="/images/logo.png" alt="In Love"></a>
+				</div>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-center">
+					<li class="dropdown"><a href="/main/login" aria-haspopup="true" aria-expanded="false">Login</a>
+					</li>		
+					<li class="dropdown"><a href="/main/signup" aria-haspopup="true" aria-expanded="false">SignUp</a>
+					</li>
+					<li class="dropdown inlove-mega"><a href="#" name="/main/search"
+						class="dropdown-toggle top-btn-load" data-toggle="dropdown" role="button"
+						aria-haspopup="true" aria-expanded="false">Search</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END: Navbar -->	
+	<div class="inlove-section">
+		<div class="container">
+			<div class="row navigator_row">
+				<!-- 맨위 정중앙에 있어야 되는 각 쇼핑몰별 아이콘 -->
+				<div class="col-xs-3 col-sm-3 navigator_icon">
+					<a href="#"><img src="/images/shopicon1.png" class="shopicon"></a>
+				</div>
+				<div class="col-xs-3 col-sm-3 navigator_icon">
+					<a href="#"><img src="/images/shopicon2.png" class="shopicon"></a>
+				</div>
+				<div class="col-xs-3 col-sm-3 navigator_icon">
+					<a href="#"><img src="/images/shopicon3.png" class="shopicon"></a>
+				</div>
+				<div class="col-xs-3 col-sm-3 navigator_icon">
+					<a href="#"><img src="/images/shopicon4.png" class="shopicon"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+					<div class="isotope-filter wow fadeIn">
+						<a href="#" data-filter="ealry">Early-Item</a> 
+						<a href="#" data-filter="shirt">Shirt</a> 
+						<a href="#" data-filter="teeshirt">Tee-shirt</a>
+						<a href="#" data-filter="pant">Pant</a>
+						<a href="#" data-filter="outer">Outer</a>
+					</div>		
+					<div id="load"> 		
+						<div class="photoswipe-gallery isotope row vertical-gutter">
+						<!--data가 추가되는 부분.-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- START: footer -->
+	<footer class="inlove-footer">
+		<div class="container">
+			<div class="inlove-footer-copyright wow fadeIn">
+				<em>Shopping Mall Prototype &copy; 2017 — Designed by Yong and Hee<a
+					href="http://themeforest.net/user/_nk?ref=_nK"></a></em>
+			</div>
+		</div>
+	</footer>
+	<!-- END: footer -->
+<!-- START: scripts -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/jarallax/jarallax/jarallax.js"></script>
+<script src="/bower_components/jarallax/jarallax/jarallax-video.js"></script>
+<script src="/bower_components/slick.js/slick/slick.min.js"></script>
+<script src="/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+<script src="/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+<script
+	src="/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+<script
+	src="/bower_components/theia-sticky-sidebar/js/theia-sticky-sidebar.js"></script>
+<script
+	src="/bower_components/smoothscroll-for-websites/SmoothScroll.js"></script>
+<script src="/bower_components/wow/dist/wow.min.js"></script>
+<script
+	src="/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+<script src="/bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+<script src="/js/inlove.min.js"></script>
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- END: scripts -->
+<!-- START: init inlove -->
+<script>if(typeof inlove !== 'undefined') {
+    inlove.init();
+}</script>
+<!-- END: init inlove -->
+</body>
+</html>
+<script>
+	$(function () {
+        $('.top-btn-load').click(function () {
+			doc = $(this).attr('name');
+			console.log(doc);
+            $('#load').load(doc);
+        });
+
+        
+		<% for(i=0; i<length; i++) { %>	
+			$('#load').append(	
+			`
+				<div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1"
+					data-filter="<%=rows[i].item_type%>">
+				<a class="inlove-effect wow fadeIn"
+					href="/images/<%=rows[i].item_img%>" data-size="1280x1840"><img
+					src="/images/<%=rows[i].item_img%>" alt="">
+					   이름: <%=rows[i].item_name %> <br>
+                       설명: <%=rows[i].item_comment %><br>
+                       가격: <%=rows[i].item_price %><br>
+                    <i class="fa fa-search-plus" style="color:white"></i>
+					<div class="photoswipe-description">
+				</a>
+				</div>
+			`
+			);
+		<% } %>
+		
+	});
+</script> 

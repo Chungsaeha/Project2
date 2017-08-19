@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SMP Sign on</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link
+   href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+   rel="stylesheet">
+<script
+   src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<script>
+	$(function() {
+		$('#toggle-two').bootstrapToggle({
+			on : 'ADMIN',
+			off : 'CLIENT'
+		});
+		$('#toggle-two').change(function() {
+			if($(this).is(':checked')) //true : client , false : admin
+			{
+				$('#load').load('/main/login/admin');
+			}
+			else{
+				$('#load').load('/main/login/client');
+			}
+		})
+	})
+</script>
+</head>
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+body {
+   text-align: center;
+}
+::-webkit-input-placeholder {
+   font-size: 15px;
+   letter-spacing: 4px;
+}
+.container {
+   font-family: 'hanna';
+   text-align: center;
+   max-width: 500px;
+}
+.birthInfo {
+   display: flex;
+    margin-top: 10px;
+}
+.birthInfo > select {
+   width: 50%;
+   margin: 0 10px; 
+}
+
+img { max-width: 200px; }
+
+.toggle-off.btn{
+   padding-left:24px;!important;
+}
+.toggle-on.btn{
+   padding-right:124px;!important;
+}
+
+</style>
+<body>
+   <form action="/main/login" method="post">
+      <a href="/main"><img src="/images/logo.png" class="#"></a>
+      <div class="container">
+         <h1>Login</h1>
+            <input type="checkbox" id="toggle-two"><br><br>      
+            <div class="mainInfo" id="load">         
+               <div class="form-group">
+                  <input type="text" class="form-control" name="username" id="mainInfo_userid" placeholder="아이디" />
+               </div>
+               <div class="form-group">
+                  <input type="password" class="form-control" name="password" id="mainInfo_userpwd" placeholder="비밀번호" />
+               </div>
+               <button type="submit" name="key" class="btn btn-default">LOGIN</button>
+               <a href="/main/signup" type="submit" class="btn btn-default" id="">JOIN</a>
+            </div>
+            <div><%=error %></div>
+      </div>
+   </form>
+</body>
+</html>
